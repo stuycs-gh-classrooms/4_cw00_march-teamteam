@@ -40,6 +40,7 @@ void draw() {
 void keyPressed() {
   if (key == 'h') {
     art = highlightRed(art);
+    art.updatePixels();
   }
   else if (key == 'd') {
     showDots = !showDots;
@@ -68,6 +69,20 @@ int getIndexFromXY(int x, int y, PImage img) {
 
 PImage highlightRed(PImage img) {
   PImage newImg = new PImage(img.width, img.height);
+  for (int p =0 ; p < img.pixels.length; p++){
+    newImg.pixels[p] = img.pixels[p];
+    
+  }//for
+  
+  for (int p =0; p < img.pixels.length; p++){
+    color c = img.pixels[p];
+    
+    float co =  red(c) / (green(c) + blue(c) + red(c)) ;
+    
+    newImg.pixels[p] = color ((1-co) * red(c));
+  }//for
+  
+  
   return newImg;
 }//higlightRed
 
