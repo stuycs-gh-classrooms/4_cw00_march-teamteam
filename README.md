@@ -25,27 +25,26 @@ Based on the images above, answer the following questions.
 #### Question 0
 What parts of the original map are being highlighted by the edge detection algorithm?
 
-YOUR ANSWER HERE (delete this line)
+The edge detection highlights the borders of certain states as well as some of the temperature shifts areas. 
 
 #### Question 1
 What information that was part of the original image has been lost via edge detection?
-
-YOUR ANSWER HERE (delete this line)
+Some of the state borders were not detected and so are missing from the edge detection. You are also unable to see the temperatures of each area. 
 
 #### Question 2
 What information is present in the grascale version that is not in the edge detected version?
 
-YOUR ANSWER HERE (delete this line)
+The grayscale version has different shades of gray so you can identify the extremeness of the temperatures. It is easier to see the state borders that are missing from the edge detection. 
 
 #### Question 3
 What information that was part of the original image has been lost via grayscale conversion?
 
-YOUR ANSWER HERE (delete this line)
+The colors of the original image are gone meaning it is harder to infer which of the areas are hot or cold. 
 
 #### Question 4
 In a temperature map, it is often useful to highlight particular temperature ranges. If you wanted to focus on higher temperatures, you might want to find a way to programatically highlight regions that are more red than others. Come up with an algorithm that would process the image such that the red regions are more prominent.
 
-YOUR ANSWER HERE (delete this line)
+Identify the red value of each pixel and if it exceeds a certain limit turn it into a prominent color. 
 
 ---
 
