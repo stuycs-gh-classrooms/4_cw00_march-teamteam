@@ -2,7 +2,7 @@
 ### Class Period:
 ### Name0: Fiona Zhang
 ### Name1: Jordan Leung
-### Name2: 
+### Name2: Zelen Zhang
 ---
 
 This is a map of average US temperatures from 1991-2020 [source](https://www.climate.gov/sites/default/files/2021-10/Normals_TotalPrecipAvgTemp_Annual_1991-2020_continuous_1400x2193.png)
